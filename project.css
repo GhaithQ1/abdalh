@@ -1,0 +1,203 @@
+
+.projects{
+    height: calc(100vh - 80px);
+    position: relative;
+    overflow: hidden;
+}
+.projects .imag{
+    position: absolute;
+    bottom: 50px;
+    left: -100px;
+}
+
+.projects .image{
+    position: absolute;
+    top: 50px;
+    right: -100px;
+}
+
+.filter{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -100;
+
+}
+.new{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+ .new div{
+    width: 100%;
+    padding: 20px 0;
+}
+ .new div h3{
+    text-align: center;
+    color: #2b3a48;
+    font-size: 25px;
+    border: 1px solid #2b3a48;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 5px 0;
+}
+ .new div .avtive,
+ .new div h3:hover{
+    background-color: #5995fd;
+    color: white;
+    border: 1px solid #ddd;
+}
+.projects .project{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 40px;
+    padding-top: 50px;
+    transform: translateY(50px);
+}
+.projects .project h1{
+    color: #2b3a48;
+    font-size: 30px;
+
+}
+.projects .project p{
+    color: #2b3a48;
+    padding: 10px 0 20px 0;
+
+}
+.projects .project img{
+    width: 45%;
+}
+.projects .project .cfrom{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+.projects .project .cfrom button{
+    padding: 15px 0;
+    border: none;
+    background-color: #5995fd;
+    font-size: 18px;
+    color: white;
+    border-radius: 3px;
+    box-shadow: 0 0 10px 0 #4d84e2;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.projects .project .cfrom button:hover{
+    background-color: #4d84e2;
+    border-radius: 10px;
+    border-radius: 0;
+}
+
+
+
+.crete-project{
+    background-color: hsl(218deg 98% 67% / 20%);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    z-index: 10000000;
+}
+
+.create-items{
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+    z-index: -1000;
+    display: none;
+
+}
+.for-you {
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius:6px ;
+}
+.for-you p{
+    color: #2b3a48;
+    width: 100%;
+    border-top: 2px solid #2b3a48;
+    border-left: 2px solid #2b3a48;
+    border-right: 2px solid #2b3a48;
+    text-align: center;
+    border-radius: 6px 6px 0 0 ;
+}
+.for-you form{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    padding: 25px 15px 30px 15px;
+}
+.for-you form i{
+    font-size: 45px;
+    color: #4d84e2;
+}
+.for-you form label{
+    font-weight: bold;
+    color: #2b3a48;
+}
+.for-you form  input{
+    background-color: #f9f9f9;
+    border: none;
+    border-radius: 6px;
+    border-bottom: 3px solid #ccc;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+    padding: 10px 20px;
+    outline: none;
+}
+.for-you form  input:focus{
+    border-bottom: 3px solid #4d84e2;
+}
+.for-you .crete-btn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 15px;
+}
+.for-you .crete-btn button{
+    padding: 5px 15px;
+    font-size: 14px;
+    border: 1px solid #2b3a48;
+    border-radius: 6px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.for-you .crete-btn button:first-child:hover{
+   background-color: #5995fd;
+   color: white;
+   border-color: white;
+}
+.for-you .crete-btn button:last-child:hover{
+   background-color: red;
+   color: white;
+   border-color: white;
+}
+.border{
+    border:2px solid #2b3a48;
+    border-radius: 0 0 6px 6px;
+
+}
+
+.block{
+    display: block;
+    z-index: 1000000000;
+}

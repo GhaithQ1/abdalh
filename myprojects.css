@@ -1,0 +1,109 @@
+.myprojects{
+    padding-top: 40px;
+}
+.myprojects .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill ,minmax(250px ,1fr));
+    gap: 20px;
+
+}
+/* .myprojects .container .box{
+   position: relative;
+} */
+.myprojects .container .image{
+    position: relative;
+}
+.myprojects .container .box .icon{
+    position: absolute;
+    top: 10px ;
+    width: 100%;
+}
+.myprojects .container .box .image .icon i{
+    font-size: 18px;
+    z-index: 1000;
+    opacity: 0;
+    transition: 0.3s;
+}
+.myprojects .container .box .icon i:first-child{
+    left: 10px;
+    position: absolute;
+    color: white;
+    cursor: pointer;
+}
+.myprojects .container .box .icon i:first-child:hover{
+    color: red;
+}
+.myprojects .container .box .icon i:last-child{
+   position: absolute;
+   right: 10px;
+   color: white;
+   cursor: pointer;
+}
+.myprojects .container .box .icon i:last-child:hover{
+    color: #3F51B5;
+}
+.myprojects .container img{
+  width: 100%;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.myprojects .container .image::before{
+    content: "";
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 0 ;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: hsl(218deg 98% 67% / 80%);
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.myprojects .container .image:hover .icon i{
+    opacity: 1;
+}
+.myprojects .container .image:hover.image::before{
+    height: 98%;
+}
+
+.myprojects .container .image .con{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+    z-index: 10000;
+    opacity: 0;
+    transition: 0.3s;
+}
+.myprojects .container .image .con p{
+    color: white;
+    font-size: 14px;
+
+}
+.myprojects .container .image .con button{
+    padding: 10px 50px;
+    font-size: 15px;
+    background: none;
+    border: 2px solid white;
+    border-radius: 6px;
+    color: white;
+    margin: 20px 0 0 0;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.myprojects .container .image .con button:hover{
+    background-color: #005eff;
+}
+
+.myprojects .container .image:hover .con{
+   opacity: 1;
+}
+
+
