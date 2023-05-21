@@ -130,9 +130,9 @@
 .for-you p{
     color: #2b3a48;
     width: 100%;
-    border-top: 2px solid #2b3a48;
-    border-left: 2px solid #2b3a48;
-    border-right: 2px solid #2b3a48;
+    border-top: 3px solid #2b3a48;
+    border-left: 3px solid #2b3a48;
+    border-right: 3px solid #2b3a48;
     text-align: center;
     border-radius: 6px 6px 0 0 ;
 }
@@ -192,7 +192,7 @@
    border-color: white;
 }
 .border{
-    border:2px solid #2b3a48;
+    border:3px solid #2b3a48;
     border-radius: 0 0 6px 6px;
 
 }
