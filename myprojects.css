@@ -19,7 +19,7 @@
     width: 100%;
 }
 .myprojects .container .box .image .icon i{
-    font-size: 18px;
+    font-size: 20px;
     z-index: 1000;
     opacity: 0;
     transition: 0.3s;
@@ -55,11 +55,8 @@
     top: 0 ;
     left: 50%;
     transform: translateX(-50%);
-    /* background-color: hsl(218deg 98% 67% / 80%);
-     */
      background: linear-gradient( hsl(218deg 98% 67% / 100%) ,hsl(218deg 98% 67% / 0%));
     z-index: 1;
-    cursor: pointer;
     border-radius: 6px;
     transition: 0.3s;
 }
