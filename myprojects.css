@@ -50,12 +50,14 @@
 .myprojects .container .image::before{
     content: "";
     width: 100%;
-    height: 0;
+    height:0;
     position: absolute;
     top: 0 ;
     left: 50%;
     transform: translateX(-50%);
-    background-color: hsl(218deg 98% 67% / 80%);
+    /* background-color: hsl(218deg 98% 67% / 80%);
+     */
+     background: linear-gradient( hsl(218deg 98% 67% / 100%) ,hsl(218deg 98% 67% / 0%));
     z-index: 1;
     cursor: pointer;
     border-radius: 6px;
@@ -66,7 +68,7 @@
     opacity: 1;
 }
 .myprojects .container .image:hover.image::before{
-    height: 98%;
+    height: 100%;
 }
 
 .myprojects .container .image .con{
@@ -86,20 +88,18 @@
     font-size: 14px;
 
 }
-.myprojects .container .image .con button{
-    padding: 10px 50px;
-    font-size: 15px;
-    background: none;
-    border: 2px solid white;
-    border-radius: 6px;
-    color: white;
+.myprojects .container .image .con i{
+    font-size: 25px ;
+    color: #2b3a48;
     margin: 20px 0 0 0;
-    font-weight: 900;
-    cursor: pointer;
+    padding: 10px 10px;
+    border-radius: 50%;
+    background-color: white;
     transition: 0.3s;
+    cursor: pointer;
 }
-.myprojects .container .image .con button:hover{
-    background-color: #005eff;
+.myprojects .container .image .con i:hover{
+  color: #5995fd;
 }
 
 .myprojects .container .image:hover .con{
