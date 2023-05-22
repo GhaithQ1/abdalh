@@ -147,27 +147,28 @@
     gap: 10px;
     padding: 25px 15px 30px 15px;
 }
-.for-you form i{
-    font-size: 45px;
-    color: #4d84e2;
+.for-you form img{
+width: 60px;
 }
 .for-you form label{
     font-weight: bold;
     color: #2b3a48;
+    font-size: 17px;
 }
 .for-you form  input{
     background-color: #f9f9f9;
     border: none;
     border-radius: 6px;
-    border-bottom: 3px solid #ccc;
+    border-bottom: 4px solid #ccc;
     font-weight: 600;
     font-size: 1.1rem;
     color: #333;
     padding: 10px 20px;
     outline: none;
+    box-shadow: 0 0 1px 0px black;
 }
 .for-you form  input:focus{
-    border-bottom: 3px solid #4d84e2;
+    border-color: #4d84e2;
 }
 .for-you .crete-btn{
     display: flex;
@@ -176,6 +177,7 @@
     gap: 10px;
     width: 100%;
     padding: 15px;
+
 }
 .for-you .crete-btn button{
     padding: 5px 15px;
@@ -184,6 +186,7 @@
     border-radius: 6px;
     transition: 0.3s;
     cursor: pointer;
+    background-color: #f9f9f9;
 }
 .for-you .crete-btn button:first-child:hover{
    background-color: #5995fd;
