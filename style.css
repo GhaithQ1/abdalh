@@ -91,14 +91,16 @@ nav .container .log p{
     padding: 5px 15px;
     background-color:#5995fd ;
     color: white;
-    border-radius: 3px;
+    border-radius: 6px;
     cursor: pointer;
+    border: 3px solid #fff;
     transition: 0.3s;
-    
 }
 
 nav .container .log p:hover{
-    background-color: #4d84e2;
+    background-color: white;
+    border: 3px solid #4481eb;
+    color: #4481eb;
     border-radius: 0;
 }
 .hero{
