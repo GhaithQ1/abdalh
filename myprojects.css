@@ -25,7 +25,7 @@ justify-content: center;
 align-items: center;
 gap: 10px;
 opacity: 0;
-transition: 0.3s;
+transition: 1s;
 }
 .myprojects .container .box .icon:hover{
     box-shadow:0 0 4px 0 #ddd;
@@ -40,7 +40,7 @@ transition: 0.3s;
     border: none;
     border-radius: 6px;
     gap: 5px;
-    transition: 0.3s;
+    transition: 0.6s;
     cursor: pointer;
     transform: translateY(-20px);
 }
@@ -51,7 +51,7 @@ transition: 0.3s;
     border-radius: 6px;
     color: white;
     background: none;
-    transition: 0.3s;
+    transition: 0.6s;
     cursor: pointer;
 
 }
@@ -99,14 +99,14 @@ transition: 0.3s;
 .myprojects .container .box .image .icon i{
     font-size: 16px;
     z-index: 1000;
-    transition: 0.3s;
+    transition: 0.6s;
     color: white;
 }
 
 .myprojects .container img{
   width: 100%;
   border-radius: 6px;
-  transition: 0.3s;
+  transition: 0.6s;
   z-index: -1;
 }
 .myprojects .container .box .image:hover img{
@@ -121,19 +121,19 @@ transition: 0.3s;
     top: 0 ;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba( 0, 0, 0, 0.7 );
-    backdrop-filter: blur( 2.5px );
-    -webkit-backdrop-filter: blur( 2.5px );
+    background: rgb(0 39 255 / 20%);
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur(2px );
     z-index: 1;
     border-radius: 6px 6px 0 0;
-    transition: 0.3s;
+    transition: 0.4s;
 }
 
 .myprojects .container .image:hover .icon i{
     opacity: 1;
 }
 .myprojects .container .image:hover.image::before{
-    height: 81%;
+    height: 80.5%;
 }
 
 .myprojects .container .image .con{
