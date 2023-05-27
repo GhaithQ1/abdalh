@@ -4,7 +4,8 @@
 .myprojects .container{
     display: grid;
     grid-template-columns: repeat(auto-fill ,minmax(250px ,1fr));
-    gap: 20px;
+    gap: 10px;
+    padding-bottom: 50px;
 
 }
 /* .myprojects .container .box{
@@ -14,39 +15,104 @@
     position: relative;
 }
 .myprojects .container .box .icon{
-    position: absolute;
-    top: 10px ;
-    width: 100%;
+position: absolute;
+z-index: 100;
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+opacity: 0;
+transition: 0.3s;
 }
-.myprojects .container .box .image .icon i{
-    font-size: 20px;
-    z-index: 1000;
-    opacity: 0;
+.myprojects .container .box .icon:hover{
+    box-shadow:0 0 4px 0 #ddd;
+    border-radius: 6px;
+}
+.myprojects .container .box .image .icon .but-project{
+    width: 70%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 6px;
+    gap: 5px;
     transition: 0.3s;
-}
-.myprojects .container .box .icon i:first-child{
-    left: 10px;
-    position: absolute;
-    color: white;
     cursor: pointer;
+    transform: translateY(-20px);
 }
-.myprojects .container .box .icon i:first-child:hover{
-    color: red;
+.myprojects .container .box .image .icon button{
+    padding: 8px 0;
+    border: none;
+    font-size: 16px;
+    border-radius: 6px;
+    color: white;
+    background: none;
+    transition: 0.3s;
+    cursor: pointer;
+
 }
-.myprojects .container .box .icon i:last-child{
-   position: absolute;
-   right: 10px;
-   color: white;
-   cursor: pointer;
+/* first */
+.myprojects .container .box .image .icon .but-project:last-child{
+    background-color: #4864ff;
 }
-.myprojects .container .box .icon i:last-child:hover{
-    color: #3F51B5;
+
+.myprojects .container .box .image .icon .but-project:last-child button{
+    color: white;
 }
+.myprojects .container .box .image .icon .but-project:last-child i{
+    color: white;
+}
+.myprojects .container .box .image .icon .but-project:last-child:hover{
+    background-color: #0f288c;
+}
+/* .myprojects .container .box .image .icon .but-project:first-child:hover i,
+.myprojects .container .box .image .icon .but-project:first-child:hover button{
+    color: white;
+} */
+/* first */
+
+
+/* last */
+.myprojects .container .box .image .icon .but-project:first-child{
+    background-color: #f9f9f9;
+
+}
+.myprojects .container .box .image .icon .but-project:first-child:hover{
+    background-color: #f44336;
+}
+.myprojects .container .box .image .icon .but-project:first-child button{
+    color: #2b3a48;
+
+}
+.myprojects .container .box .image .icon .but-project:first-child i{
+    color: #2b3a48;
+}
+.myprojects .container .box .image .icon .but-project:first-child:hover i,
+.myprojects .container .box .image .icon .but-project:first-child:hover button{
+    color: white;
+}
+
+.myprojects .container .box .image .icon i{
+    font-size: 16px;
+    z-index: 1000;
+    transition: 0.3s;
+    color: white;
+}
+
 .myprojects .container img{
   width: 100%;
   border-radius: 6px;
   transition: 0.3s;
+  z-index: -1;
 }
+.myprojects .container .box .image:hover img{
+    border-radius: 6px 6px 0 0 ;
+}
+
 .myprojects .container .image::before{
     content: "";
     width: 100%;
@@ -55,9 +121,11 @@
     top: 0 ;
     left: 50%;
     transform: translateX(-50%);
-     background: linear-gradient( hsl(218deg 98% 67% / 100%) ,hsl(218deg 98% 67% / 0%));
+    background: rgba( 0, 0, 0, 0.7 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
     z-index: 1;
-    border-radius: 6px;
+    border-radius: 6px 6px 0 0;
     transition: 0.3s;
 }
 
@@ -65,7 +133,7 @@
     opacity: 1;
 }
 .myprojects .container .image:hover.image::before{
-    height: 100%;
+    height: 81%;
 }
 
 .myprojects .container .image .con{
@@ -98,9 +166,36 @@
 .myprojects .container .image .con i:hover{
   color: #5995fd;
 }
-
-.myprojects .container .image:hover .con{
+.myprojects .container .image .desc i{
+    color: #2b3a48;
+    font-size:15px;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.3s;
+    z-index: 10000;
+  }
+.myprojects .container .image:hover .desc i,
+.myprojects .container .image:hover .icon{
    opacity: 1;
 }
+
+.myprojects .container .image .desc{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding:0 5px 10px 5px;
+   margin-bottom: 15px;
+}
+
+
+.myprojects .container .image .desc h3{
+    color: #2b3a48;
+    font-size: 16px;
+}
+.myprojects .container .image .desc p{
+    font-size: 10px;
+    color: #999;
+}
+
 
 
